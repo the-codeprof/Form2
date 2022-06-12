@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html body{
+    width:100%;
+    background-color: rgb(0, 68, 100);
+    /* background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url("bg.jpg");
+    background-size: cover;
+    background-position: left top; */
+    height: 100vh;
+    
+}
+
+.banner-text{
+    color:white;
+    width:50%;
+    float:left;
+    padding:20px
+}
+
+.banner-text h3{
+    font-size: 2rem;
+}
+
+form{
+    width:40%;
+    background: transparent;
+    margin: 20px 50px 0 0;
+    border:none;
+    outline: none;
+    padding: 20px;
+    float: right;
+
+}
+
+fieldset{
+    border:2px solid rgba(255,255,255,0.7);
+    padding:20px 30px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.3);
+    box-shadow: 0px 10px 16px rgba(0,0,0,0.2);
+}
+
+legend{
+    background-color: #f2f2f2;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.form-group{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+label{
+    color:wheat;
+    position: absolute;
+    left:0;
+    top: 0;
+    line-height: 32px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    pointer-events: none;
+    transition: .5s top;
+    
+}
+
+input:focus ~ label, 
+input:valid ~ label{
+    top:-20px;
+    transition: .5s top;
+    font-size:10px;
+    letter-spacing: 2px;
+    color:white;
+    text-transform: uppercase;
+}
+
+input[type="text"], input[type="password"]{
+    width:100%;
+    padding:10px 0px;
+    background: transparent;
+    color:wheat;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+input[type="submit"]{
+    width:100%;
+    padding: 10px 0px;
+    border:none;
+    outline:none;
+    font-size: 23px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    font-weight: 500;
+    transition: background-color .2s ease;
+}
+
+input[type="submit"]:hover{
+    background-color: wheat;
+}
+
+.form-group p{
+    color:rgba(255,255,255,0.7);
+    text-align: left;
+    line-height: 32px;
+    
+}
+
+.form-group p a{
+    color:white;
+    padding-left: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.form-group p a:hover{
+    color:wheat;
+}
+
+@media(max-width:700px){
+    form{
+        width:90%;
+        margin:0 auto;
+        float:none;
+    }
+
+    .banner-text{
+        width:100%;
+        margin: 20px auto;
+        letter-spacing: 1px;
+    }
+
+    .banner-text h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    legend{
+        background-color: #f2f2f2;
+        padding: 5px 20px;
+        border-radius: 5px;
+        text-align: right;
+        font-size: 15px;
+    }
+
+    .form-group p{
+        color:rgba(255,255,255,0.7);
+        text-align: center;
+        line-height: 32px;
+        
+    }
+
+    input[type="submit"]{
+        width:100%;
+        padding: 7px 0px;
+        border:none;
+        outline:none;
+        font-size: 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #f2f2f2;
+        font-weight: 500;
+        transition: background-color .2s ease;
+    }
+}
+
+
+
